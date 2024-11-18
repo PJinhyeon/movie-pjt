@@ -1,6 +1,26 @@
 # movie-pjt
 SSAFY 1학기 관통  PJT
 
+## Git 사용법
+
+1. git clone main
+   
+2. branch 생성 : git branch tmdb
+                 git branch youtube
+3. branch로 변경 : git switch youtube
+                  git branch youtube
+
+(각자 작업 후 ...)
+
+4. 첫번째 branch는 평소대로 push 가능(충돌x) : git add -> git commit -> git push tmdb
+5. 두번째 branch push (충돌 발생) : git add -> git commit -> ...
+  git switch main
+  git pull origin main
+  git merge youtube
+  git add . (메인 저장) -> git commit -> git push
+
+
+
 ## 11.18
 1. 페이지 UI 완성
 2. ERD
