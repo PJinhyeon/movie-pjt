@@ -31,10 +31,17 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'accounts',
-    'movies',
     'recommendations',
     'rest_framework',
+    'rest_framework.authtoken',
+    'dj_rest_auth',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'dj_rest_auth.registration',
+    'accounts',
+    'movies',
     'community',
     'watchlist',
     'search',
@@ -50,6 +57,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -131,12 +139,22 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",
-    "django.middleware.common.CommonMiddleware",
-]
+# MIDDLEWARE = [
+#     "corsheaders.middleware.CorsMiddleware",
+#     "django.middleware.common.CommonMiddleware",
+# ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES' : [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
+
+
+AUTH_USER_MODEL = 'accounts.CustomUser'
+ACCOUNT_FORMS = {'signup': 'mysite.forms.MyCustomSignupForm'}
