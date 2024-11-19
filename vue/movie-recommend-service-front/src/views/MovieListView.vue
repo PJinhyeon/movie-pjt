@@ -18,6 +18,7 @@
   </div>
 </template>
 
+
 <script setup>
 import GenreFilter from '@/components/GenreFilter.vue';
 import MovieList from '@/components/MovieList.vue';
@@ -52,6 +53,8 @@ const filteredMovies = computed(() => {
 
 </script>
 
+
 <style scoped>
+
 
 </style>

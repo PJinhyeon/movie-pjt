@@ -83,7 +83,11 @@ export const useCounterStore = defineStore('counter', () => {
     return genre
   }
 
+  const selectOneMovie = function (movieId) {
+    return movies.value.find(m => m.id === movieId)
+  };
 
-  return { signUp, logIn, genres, getMovies, fetchGenres, selectOneGenre, movies }
+
+  return { signUp, logIn, genres, getMovies, fetchGenres, selectOneGenre, movies, selectOneMovie }
 
 })
