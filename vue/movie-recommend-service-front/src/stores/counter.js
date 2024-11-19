@@ -7,6 +7,8 @@ export const useCounterStore = defineStore('counter', () => {
   const router = useRouter()
   // state
 
+  const genres = ref([]);
+  
   // getters
 
   // actions
@@ -44,5 +46,23 @@ export const useCounterStore = defineStore('counter', () => {
     })
   }
 
-  return { signUp, logIn }
+  const fetchGenres = function() {
+    axios({
+      method: 'GET',
+      url: 'http://127.0.0.1:8000/movies/genres/'
+    })
+    .then((res) => {
+      console.log(res.data)
+      genres.value = res.data
+    })
+    .catch((error)=>{
+      console.log(error)
+    })
+  }
+  const selectOneGenre = function(genreId) {
+    return genres.value.filter(g => g.id === genreId)
+  }
+
+  return { signUp, logIn, genres, fetchGenres, selectOneGenre }
+
 })
