@@ -1,12 +1,26 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
+import axios from 'axios';
 
 export const useCounterStore = defineStore('counter', () => {
-  const count = ref(0)
-  const doubleCount = computed(() => count.value * 2)
-  function increment() {
-    count.value++
+  const genres = ref([]);
+
+  const fetchGenres = function() {
+    axios({
+      method: 'GET',
+      url: 'http://127.0.0.1:8000/movies/genres/'
+    })
+    .then((res) => {
+      console.log(res.data)
+      genres.value = res.data
+    })
+    .catch((error)=>{
+      console.log(error)
+    })
+  }
+  const selectOneGenre = function(genreId) {
+    return genres.value.filter(g => g.id === genreId)
   }
 
-  return { count, doubleCount, increment }
+  return { genres, fetchGenres, selectOneGenre }
 })

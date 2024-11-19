@@ -3,6 +3,7 @@
   <div>
     <AppNavbar/>
   </div>
+<RouterView/>
 </template>
 
 <script setup>
