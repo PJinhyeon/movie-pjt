@@ -14,9 +14,6 @@ import { useCounterStore } from '@/stores/counter';
 
 const store = useCounterStore()
 
-// const genres = computed(() => store.genres)
-console.log(store.genres.value)
-
 const emit = defineEmits(['genreSelected']);
 const selectGenre = (genreId) => {
   emit('genreSelected', genreId);

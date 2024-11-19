@@ -6,7 +6,7 @@ import { useRouter } from 'vue-router'
 export const useCounterStore = defineStore('counter', () => {
   const router = useRouter()
   // state
-
+  const movies = ref([])
   const genres = ref([]);
   
   // getters
@@ -46,23 +46,44 @@ export const useCounterStore = defineStore('counter', () => {
     })
   }
 
+  // 장르 리스트
   const fetchGenres = function() {
     axios({
       method: 'GET',
       url: 'http://127.0.0.1:8000/movies/genres/'
     })
-    .then((res) => {
-      console.log(res.data)
-      genres.value = res.data
-    })
-    .catch((error)=>{
-      console.log(error)
-    })
-  }
-  const selectOneGenre = function(genreId) {
-    return genres.value.filter(g => g.id === genreId)
+      .then((res) => {
+        console.log(res.data)
+        genres.value = res.data
+      })
+      .catch((err)=>{
+        console.log(err)
+      })
   }
 
-  return { signUp, logIn, genres, fetchGenres, selectOneGenre }
+  // 영화 리스트
+  const getMovies = function () {
+    axios ({
+      method: 'get',
+      url: 'http://127.0.0.1:8000/movies/'
+    })
+      .then((res) => {
+        movies.value = res.data
+      })
+      .catch((err) => {
+        console.log("에러 : ", err)
+      })
+  }
+
+  
+  // 선택된 장르(genreId)에 따라 필터
+  const selectOneGenre = function(genreId) {
+    const genre = genres.value.filter(g => g.id === genreId)
+    console.log(genre)
+    return genre
+  }
+
+
+  return { signUp, logIn, genres, getMovies, fetchGenres, selectOneGenre, movies }
 
 })
