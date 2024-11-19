@@ -6,6 +6,7 @@ import MovieListView from '@/views/MovieListView.vue'
 import MovieDetailView from '@/views/MovieDetailView.vue'
 import GenreView from '@/views/GenreView.vue'
 import testView from '@/views/testView.vue'
+import MyPageView from '@/views/MyPageView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,10 +42,16 @@ const router = createRouter({
       name: 'GenreView', 
       component: GenreView 
     },
+    // movie card, movie detail 테스트 위해 임시로 만든 페이지. MovieList 구성에 이용 예정
     {
       path: '/test', 
       name: 'testView', 
       component: testView 
+    },
+    {
+      path: '/profile/:person_id', 
+      name: 'MyPageView', 
+      component: MyPageView
     }
   ],
 })
