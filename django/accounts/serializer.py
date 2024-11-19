@@ -22,3 +22,9 @@ class CustomRegisterSerializer(RegisterSerializer):
         user.profile_picture = self.validated_data.get('profile_picture', None)
         user.save()
         return user
+    
+
+class UserProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email', 'first_name', 'last_name', 'nickname', 'profile_picture', 'date_joined']

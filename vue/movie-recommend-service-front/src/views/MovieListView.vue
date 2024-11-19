@@ -5,7 +5,7 @@
         <GenreFilter  @genreSelected="onGenreSelected"/>
         <!-- <GenreFilter @genreSelected="onGenreSelected"/> -->
         <!-- <GenreFilter @genreSelected="filterByGenre" /> -->
-         <SortToggle/>
+         <SortToggle @sortChanged="onSortChanged"/>
         <!-- <SortToggle @sortChanged="sortMovies" /> -->
       </div>
     <MovieList/>
@@ -27,11 +27,17 @@ onMounted(() => {
   store.fetchGenres()
 })
 
-const selectedGenre = ref('')
+const selectedGenre = ref('all')
+const selectedSort = ref('latest')
 
 const onGenreSelected = (genreId) => {
   selectedGenre.value = genreId; // "all" 또는 특정 장르 ID를 저장
   console.log(selectedGenre.value)
+};
+
+const onSortChanged = (sortCriteria) => {
+  selectedSort.value = sortCriteria;
+  console.log(selectedSort.value)
 };
 
 

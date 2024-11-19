@@ -8,6 +8,7 @@ export const useCounterStore = defineStore('counter', () => {
   // state
 
   const genres = ref([]);
+  const movies = ref([]);
   
   // getters
 
@@ -63,6 +64,10 @@ export const useCounterStore = defineStore('counter', () => {
     return genres.value.filter(g => g.id === genreId)
   }
 
-  return { signUp, logIn, genres, fetchGenres, selectOneGenre }
+  const selectOneMovie = function (movieId) {
+    return movies.value.find(m => m.id === movieId)
+  };
+
+  return { signUp, logIn, genres, fetchGenres, selectOneGenre, selectOneMovie }
 
 })

@@ -5,6 +5,7 @@ import LoginView from '@/views/LoginView.vue'
 import MovieListView from '@/views/MovieListView.vue'
 import MovieDetailView from '@/views/MovieDetailView.vue'
 import GenreView from '@/views/GenreView.vue'
+import testView from '@/views/testView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,14 +31,20 @@ const router = createRouter({
       component: MovieListView,
     },
     {
-      path: '/movies/:movie_pk',
+      path: '/movies/:movie_id',
       name: 'MovieDetailView',
       component: MovieDetailView,
+      props: true,
     },
     {
-      path: '/movies/genre/:genre_pk', 
+      path: '/movies/genre/:genre_id', 
       name: 'GenreView', 
       component: GenreView 
+    },
+    {
+      path: '/test', 
+      name: 'testView', 
+      component: testView 
     }
   ],
 })
