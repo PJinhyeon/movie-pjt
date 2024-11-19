@@ -1,12 +1,14 @@
 
 <template>
-  <div>
+  <header>
     <AppNavbar/>
-  </div>
+  </header>
+
+  <RouterView/>
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import AppNavbar from '@/components/Common/AppNavbar.vue'
 </script>
 
