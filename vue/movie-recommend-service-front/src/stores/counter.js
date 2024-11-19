@@ -53,7 +53,6 @@ export const useCounterStore = defineStore('counter', () => {
       url: 'http://127.0.0.1:8000/movies/genres/'
     })
       .then((res) => {
-        console.log(res.data)
         genres.value = res.data
       })
       .catch((err)=>{
@@ -68,6 +67,7 @@ export const useCounterStore = defineStore('counter', () => {
       url: 'http://127.0.0.1:8000/movies/'
     })
       .then((res) => {
+        console.log("영화 리스트:", res.data)
         movies.value = res.data
       })
       .catch((err) => {
