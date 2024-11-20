@@ -4,7 +4,7 @@ from .models import Movie, Genre
 class MovieListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
-        fields = ('id', 'title', 'release_date', 'genres')
+        fields = ('id', 'title', 'poster', 'release_date', 'genres')
 
 class MovieSerializer(serializers.ModelSerializer):
     genres = serializers.StringRelatedField(many=True)

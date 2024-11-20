@@ -37,7 +37,7 @@ const router = createRouter({
       props: true,
     },
     {
-      path: '/movies/genre/:genre_id', 
+      path: '/movies/:genre_id', 
       name: 'GenreView', 
       component: GenreView 
     },

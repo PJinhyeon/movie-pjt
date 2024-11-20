@@ -6,13 +6,9 @@
     </div>
 
     <!-- MovieList.vue에 props -->
-    <!-- <MovieList :movies="filteredMovies" /> 
-    {{ filteredMovies }} -->
+    <MovieList :movies="filteredMovies" /> 
 
 
-    <!-- <MovieList v-if="store.movies" :movies="filteredMovies" /> -->
-    <div v-if="store.movies">{{ filteredMovies }}</div>
-    <div v-else>Loading movies...</div>
 
 
   </div>
@@ -41,7 +37,6 @@ const onGenreSelected = (genreId) => {
 }
 
 const filteredMovies = computed(() => {
-  console.log('디버깅:', store.movies)
   // 모든 영화
   if (selectedGenre.value === 'all') {
     return store.movies

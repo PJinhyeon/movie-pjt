@@ -2,14 +2,21 @@
   <div v-if="movie">
     <h1>MovieDetailView</h1>
     <h1>{{ movie.title }}</h1>
-    <img :src="movie.poster" alt="Movie Poster" style="width: 300px;"/>
+    <img :src="'https://image.tmdb.org/t/p/w500' + movie.poster" alt="img" class="movie-image">
     <p>{{ movie.overview }}</p>
     <p>Release Date: {{ movie.release_date }}</p>
     <p>Runtime: {{ movie.runtime }} minutes</p>
     <p>Director: {{ movie.director }}</p>
     <p>Average Vote: {{ movie.vote_average }}</p>
     <p>Number of Votes: {{ movie.vote_count }}</p>
-    <p>Genres: {{ movie.genres.join(', ') }}</p>
+    <p>Genres: 
+      <button
+        v-for="genre in movie.genres"
+        :key="genre"
+        @click="filterByGenre(genre)">
+        {{ genre }}
+      </button>
+    </p>
     
   </div>
 </template>
@@ -24,13 +31,20 @@ const route = useRoute();
 const movieId = route.params.movie_id;
 const store = useCounterStore()
 const movie = ref(null)
+
 onMounted(() => {
   movie.value = store.selectOneMovie(parseInt(movieId))
 })
 
+// const filterByGenre = (genre) => {
+//   route.push({ name: 'GenreView', params: { genre_id: genre }})
+// }
 
 </script>
 
 <style scoped>
+.movie-image {
+  width: 200px;
+}
 
 </style>
