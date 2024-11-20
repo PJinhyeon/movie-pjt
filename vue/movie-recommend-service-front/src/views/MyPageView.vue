@@ -8,7 +8,7 @@
       <!-- 자신의 프로필인 경우에만 보이는 내용 -->
       <div v-if="isOwnProfile">
         <button @click="editProfile">프로필 수정</button>
-      </div>
+      </div> 
     </div>
     <div v-else>
       <p>해당 유저의 정보를 찾을 수 없습니다.</p>
