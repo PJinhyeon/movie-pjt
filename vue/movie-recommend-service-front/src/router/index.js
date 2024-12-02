@@ -4,9 +4,16 @@ import SignUpView from '@/views/SignUpView.vue'
 import LoginView from '@/views/LoginView.vue'
 import MovieListView from '@/views/MovieListView.vue'
 import MovieDetailView from '@/views/MovieDetailView.vue'
-import GenreView from '@/views/GenreView.vue'
-import testView from '@/views/testView.vue'
 import MyPageView from '@/views/MyPageView.vue'
+import CommunityView from '@/views/CommunityView.vue'
+import CreateArticleView from '@/views/CreateArticleView.vue'
+import ArticleDetailView from '@/views/ArticleDetailView.vue'
+import SearchView from '@/views/SearchView.vue'
+import CartView from '@/views/CartView.vue'
+import ArticleUpdateView from '@/views/ArticleUpdateView.vue'
+import RecommendationView from '@/views/RecommendationView.vue'
+import EditProfile from '@/views/EditProfile.vue'
+import ChangePasswordView from '@/views/ChangePasswordView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +27,11 @@ const router = createRouter({
       path: '/signup',
       name: 'SignUpView',
       component: SignUpView
+    },
+    {
+      path: '/change',
+      name: 'ChangePasswordView',
+      component: ChangePasswordView
     },
     {
       path: '/login',
@@ -38,22 +50,57 @@ const router = createRouter({
       props: true,
     },
     {
-      path: '/movies/:genre_id', 
-      name: 'GenreView', 
-      component: GenreView 
+      path: '/movies/cart',
+      name: 'CartView',
+      component: CartView,
     },
-    // movie card, movie detail 테스트 위해 임시로 만든 페이지. MovieList 구성에 이용 예정
     {
-      path: '/test', 
-      name: 'testView', 
-      component: testView 
+      path: '/genre/:genreId', 
+      name: 'GenreFilteredMovies',
+      component: MovieListView,
     },
     {
       path: '/profile/:person_id', 
       name: 'MyPageView', 
       component: MyPageView
+    },
+    {
+      path: '/community', 
+      name: 'CommunityView', 
+      component: CommunityView
+    },
+    {
+      path: '/community/articles/new', 
+      name: 'CreateArticleView', 
+      component: CreateArticleView
+    },
+    {
+      path: '/articles/:articleId',
+      name: 'ArticleDetailView',
+      component: ArticleDetailView,
+    },
+    {
+      path: '/movies/search/',
+      name: 'SearchView',
+      component: SearchView,
+    },
+    {
+      path: '/articles/:articleId/update/',
+      name: 'ArticleUpdateView',
+      component: ArticleUpdateView,
+    },
+    {
+      path: '/recommendations/',
+      name: 'RecommendationView',
+      component: RecommendationView,
+    },
+    {
+      path: '/profile/:person_id/edit/', 
+      name: 'EditProfile', 
+      component: EditProfile
     }
   ],
 })
+
 
 export default router

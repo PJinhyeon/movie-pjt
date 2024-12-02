@@ -1,0 +1,182 @@
+[
+    {
+        "model": "movies.cartitem",
+        "pk": 1,
+        "fields": {
+            "user": 5,
+            "movie": 163,
+            "added_at": "2024-11-22T02:47:22.258295Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 2,
+        "fields": {
+            "user": 6,
+            "movie": 111,
+            "added_at": "2024-11-21T02:47:22.258314Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 3,
+        "fields": {
+            "user": 7,
+            "movie": 172,
+            "added_at": "2024-11-20T02:47:22.258319Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 4,
+        "fields": {
+            "user": 10,
+            "movie": 151,
+            "added_at": "2024-11-19T02:47:22.258323Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 5,
+        "fields": {
+            "user": 4,
+            "movie": 121,
+            "added_at": "2024-11-18T02:47:22.258327Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 6,
+        "fields": {
+            "user": 9,
+            "movie": 200,
+            "added_at": "2024-11-17T02:47:22.258331Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 7,
+        "fields": {
+            "user": 1,
+            "movie": 148,
+            "added_at": "2024-11-16T02:47:22.258335Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 8,
+        "fields": {
+            "user": 3,
+            "movie": 142,
+            "added_at": "2024-11-15T02:47:22.258341Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 9,
+        "fields": {
+            "user": 3,
+            "movie": 162,
+            "added_at": "2024-11-14T02:47:22.258346Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 10,
+        "fields": {
+            "user": 10,
+            "movie": 129,
+            "added_at": "2024-11-13T02:47:22.258350Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 11,
+        "fields": {
+            "user": 10,
+            "movie": 176,
+            "added_at": "2024-11-12T02:47:22.258354Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 12,
+        "fields": {
+            "user": 1,
+            "movie": 199,
+            "added_at": "2024-11-11T02:47:22.258358Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 13,
+        "fields": {
+            "user": 6,
+            "movie": 121,
+            "added_at": "2024-11-10T02:47:22.258363Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 14,
+        "fields": {
+            "user": 5,
+            "movie": 161,
+            "added_at": "2024-11-09T02:47:22.258370Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 15,
+        "fields": {
+            "user": 5,
+            "movie": 173,
+            "added_at": "2024-11-08T02:47:22.258376Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 16,
+        "fields": {
+            "user": 2,
+            "movie": 133,
+            "added_at": "2024-11-07T02:47:22.258384Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 17,
+        "fields": {
+            "user": 2,
+            "movie": 166,
+            "added_at": "2024-11-06T02:47:22.258388Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 18,
+        "fields": {
+            "user": 10,
+            "movie": 182,
+            "added_at": "2024-11-05T02:47:22.258392Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 19,
+        "fields": {
+            "user": 8,
+            "movie": 125,
+            "added_at": "2024-11-04T02:47:22.258395Z"
+        }
+    },
+    {
+        "model": "movies.cartitem",
+        "pk": 20,
+        "fields": {
+            "user": 7,
+            "movie": 105,
+            "added_at": "2024-11-03T02:47:22.258399Z"
+        }
+    }
+]

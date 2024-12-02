@@ -1,26 +1,7 @@
 from rest_framework import serializers
-from .models import Movie, Genre
+from .models import CartItem
 
-class MovieListSerializer(serializers.ModelSerializer):
+class CartItemSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Movie
-        fields = ('id', 'title', 'poster', 'release_date', 'genres')
-
-class MovieSerializer(serializers.ModelSerializer):
-    genres = serializers.StringRelatedField(many=True)
-    actors = serializers.StringRelatedField(many=True)
-    keywords = serializers.StringRelatedField(many=True)
-
-    class Meta:
-        model = Movie
-        fields = '__all__'
-
-class GenreSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Genre
-        fields = ('id', 'name')
-
-class GenreListSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Genre
-        fields = ('id', 'name')
+        model = CartItem
+        fields = ['id', 'movie', 'added_at']

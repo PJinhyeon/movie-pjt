@@ -1,0 +1,486 @@
+[
+{
+    "model": "community.comment",
+    "pk": 6,
+    "fields": {
+        "user": 2,
+        "article": 10,
+        "content": "정말 공감합니다! 저도 스토리이 좋았습니다.",
+        "created_at": "2024-11-17T02:25:11.825Z",
+        "updated_at": "2024-11-17T02:25:11.825Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 8,
+    "fields": {
+        "user": 3,
+        "article": 2,
+        "content": "정말 공감합니다! 저도 이 배우이 좋았습니다.",
+        "created_at": "2024-11-15T02:25:11.825Z",
+        "updated_at": "2024-11-15T02:25:11.825Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 13,
+    "fields": {
+        "user": 9,
+        "article": 2,
+        "content": "정말 공감합니다! 저도 스토리이 좋았습니다.",
+        "created_at": "2024-11-10T02:25:11.825Z",
+        "updated_at": "2024-11-10T02:25:11.825Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 16,
+    "fields": {
+        "user": 4,
+        "article": 20,
+        "content": "정말 공감합니다! 저도 스토리이 좋았습니다.",
+        "created_at": "2024-11-07T02:25:11.825Z",
+        "updated_at": "2024-11-07T02:25:11.825Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 20,
+    "fields": {
+        "user": 1,
+        "article": 2,
+        "content": "정말 공감합니다! 저도 이 장면이 좋았습니다.",
+        "created_at": "2024-11-03T02:25:11.825Z",
+        "updated_at": "2024-11-03T02:25:11.825Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 26,
+    "fields": {
+        "user": 6,
+        "article": 10,
+        "content": "정말 공감합니다! 저도 이 배우이 좋았습니다.",
+        "created_at": "2024-10-28T02:25:11.825Z",
+        "updated_at": "2024-10-28T02:25:11.825Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 27,
+    "fields": {
+        "user": 10,
+        "article": 17,
+        "content": "정말 공감합니다! 저도 이 배우이 좋았습니다.",
+        "created_at": "2024-10-27T02:25:11.825Z",
+        "updated_at": "2024-10-27T02:25:11.825Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 33,
+    "fields": {
+        "user": 10,
+        "article": 17,
+        "content": "정말 공감합니다! 저도 이 장면이 좋았습니다.",
+        "created_at": "2024-10-21T02:25:11.825Z",
+        "updated_at": "2024-10-21T02:25:11.825Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 34,
+    "fields": {
+        "user": 5,
+        "article": 20,
+        "content": "정말 공감합니다! 저도 이 배우이 좋았습니다.",
+        "created_at": "2024-10-20T02:25:11.825Z",
+        "updated_at": "2024-10-20T02:25:11.825Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 36,
+    "fields": {
+        "user": 5,
+        "article": 17,
+        "content": "정말 공감합니다! 저도 이 장면이 좋았습니다.",
+        "created_at": "2024-10-18T02:25:11.825Z",
+        "updated_at": "2024-10-18T02:25:11.825Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 37,
+    "fields": {
+        "user": 7,
+        "article": 10,
+        "content": "정말 공감합니다! 저도 스토리이 좋았습니다.",
+        "created_at": "2024-10-17T02:25:11.825Z",
+        "updated_at": "2024-10-17T02:25:11.825Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 38,
+    "fields": {
+        "user": 4,
+        "article": 2,
+        "content": "정말 공감합니다! 저도 이 배우이 좋았습니다.",
+        "created_at": "2024-10-16T02:25:11.825Z",
+        "updated_at": "2024-10-16T02:25:11.825Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 41,
+    "fields": {
+        "user": 8,
+        "article": 21,
+        "content": "냄새 얘기 나올 때 진짜 기분 나빴음 ㅋㅋ;",
+        "created_at": "2024-11-26T01:22:03.553Z",
+        "updated_at": "2024-11-26T01:22:03.553Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 42,
+    "fields": {
+        "user": 8,
+        "article": 21,
+        "content": "\"비 오는 장면은 진짜 안 잊혀질 듯",
+        "created_at": "2024-11-26T01:22:12.123Z",
+        "updated_at": "2024-11-26T01:22:12.123Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 43,
+    "fields": {
+        "user": 8,
+        "article": 21,
+        "content": "마지막 엔딩 보고 충격 먹음.",
+        "created_at": "2024-11-26T01:22:23.316Z",
+        "updated_at": "2024-11-26T01:22:23.316Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 44,
+    "fields": {
+        "user": 8,
+        "article": 17,
+        "content": "스콜세지의 촬영 기법과 드니로의 연기가 결합된 이 작품은 시대를 초월한 영화적 명작이라고 할 수 있죠. 개인의 내적 고통과 사회의 타락이 이토록 완벽하게 그려진 작품은 드물어요. 특히 뉴욕이라는 공간이 단순한 배경이 아니라 하나의 캐릭터처럼 느껴졌습니다.",
+        "created_at": "2024-11-26T01:28:17.853Z",
+        "updated_at": "2024-11-26T01:28:17.853Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 45,
+    "fields": {
+        "user": 8,
+        "article": 17,
+        "content": "드니로 연기 진짜 미쳤죠. 마지막에 총 쏘는 장면 보고 입이 떡 벌어졌어요. 뉴욕의 분위기도 살벌하게 잘 살린 것 같고요. 볼수록 무거워지는 영화지만 진짜 명작이에요!",
+        "created_at": "2024-11-26T01:28:32.133Z",
+        "updated_at": "2024-11-26T01:28:32.133Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 46,
+    "fields": {
+        "user": 8,
+        "article": 17,
+        "content": "사실 처음엔 좀 어렵게 느껴졌는데, 보고 나니 계속 생각나요. 트래비스가 진짜 영웅인가 싶다가도, 뭔가 불안한 느낌이 들더라고요. 마지막 대사도 뇌리에 콕 박혀서 며칠 동안 잊히질 않았어요",
+        "created_at": "2024-11-26T01:28:41.184Z",
+        "updated_at": "2024-11-26T01:28:41.184Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 47,
+    "fields": {
+        "user": 8,
+        "article": 22,
+        "content": "이 작품이 제시한 디스토피아적 세계관이 지금도 SF 영화에 계속 영향을 준다는 점에서 진정한 클래식이라고 생각합니다. 단순히 비주얼만 훌륭한 게 아니라, 철학적 깊이와 감정적 여운까지 남기죠. 감독판 엔딩은 또 다른 해석의 재미를 줬어요 혹시 안보셨으면 감독판까지 추천드려요",
+        "created_at": "2024-11-26T01:32:13.603Z",
+        "updated_at": "2024-11-26T01:32:13.603Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 48,
+    "fields": {
+        "user": 8,
+        "article": 22,
+        "content": "진짜 분위기가 압도적이었어요. 네온사인 가득한 도시랑 음악이 완전 중독적이었고, 해리슨 포드랑 루틀거 하우어 둘 다 너무 멋졌어요. 특히 마지막 대사는 안 잊혀질 것 같아요!",
+        "created_at": "2024-11-26T01:32:47.802Z",
+        "updated_at": "2024-11-26T01:32:47.802Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 49,
+    "fields": {
+        "user": 8,
+        "article": 22,
+        "content": "사실 처음엔 좀 느리다고 느꼈는데, 보다 보니까 왜 명작인지 알겠더라고요. 미래 도시가 이렇게 멋있게 표현된 영화는 처음 봤어요. 한 번 본 사람은 계속 생각날 수밖에 없는 영화 같아요",
+        "created_at": "2024-11-26T01:33:01.669Z",
+        "updated_at": "2024-11-26T01:33:01.669Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 50,
+    "fields": {
+        "user": 8,
+        "article": 22,
+        "content": "SF 좋아하는 사람이라면 **<블레이드 러너>**를 놓칠 수 없죠. 미래 도시를 이렇게 멋지게 표현한 영화가 또 있을까요? 해리슨 포드의 카리스마도 좋지만, 저는 악역인 로이 베티가 진짜 멋졌어요. 마지막에 그 대사... \"모든 순간이 사라진다, 빗속의 눈물처럼\" 이거요. 볼 때마다 소름 돋아요.",
+        "created_at": "2024-11-26T01:33:25.186Z",
+        "updated_at": "2024-11-26T01:33:25.186Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 51,
+    "fields": {
+        "user": 1,
+        "article": 24,
+        "content": "이거 진짜 재미있음",
+        "created_at": "2024-11-26T01:42:44.927Z",
+        "updated_at": "2024-11-26T01:42:44.927Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 52,
+    "fields": {
+        "user": 1,
+        "article": 24,
+        "content": "진짜? 나는 취향 아니었어",
+        "created_at": "2024-11-26T01:42:56.302Z",
+        "updated_at": "2024-11-26T01:42:56.302Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 53,
+    "fields": {
+        "user": 2,
+        "article": 21,
+        "content": "사람한테 냄새가지고 그런 표정이라니",
+        "created_at": "2024-11-26T01:50:28.868Z",
+        "updated_at": "2024-11-26T01:50:28.868Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 54,
+    "fields": {
+        "user": 2,
+        "article": 25,
+        "content": "황량한 오렌지 밭이 기억에 많이 남네요..",
+        "created_at": "2024-11-26T01:51:01.488Z",
+        "updated_at": "2024-11-26T01:51:01.488Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 55,
+    "fields": {
+        "user": 2,
+        "article": 26,
+        "content": "화해 잘하세요~",
+        "created_at": "2024-11-26T01:52:29.843Z",
+        "updated_at": "2024-11-26T01:52:29.843Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 56,
+    "fields": {
+        "user": 2,
+        "article": 21,
+        "content": "냄새냄새",
+        "created_at": "2024-11-26T01:52:51.780Z",
+        "updated_at": "2024-11-26T01:52:51.780Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 57,
+    "fields": {
+        "user": 2,
+        "article": 23,
+        "content": "저도 라이언 고슬링이 너무 좋아지더라고요",
+        "created_at": "2024-11-26T01:54:59.455Z",
+        "updated_at": "2024-11-26T01:54:59.455Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 58,
+    "fields": {
+        "user": 2,
+        "article": 24,
+        "content": "음 그래?",
+        "created_at": "2024-11-26T01:55:12.992Z",
+        "updated_at": "2024-11-26T01:55:12.992Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 59,
+    "fields": {
+        "user": 2,
+        "article": 24,
+        "content": "그래라",
+        "created_at": "2024-11-26T01:55:16.245Z",
+        "updated_at": "2024-11-26T01:55:16.245Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 60,
+    "fields": {
+        "user": 2,
+        "article": 24,
+        "content": "알아서해",
+        "created_at": "2024-11-26T01:55:19.328Z",
+        "updated_at": "2024-11-26T01:55:19.328Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 62,
+    "fields": {
+        "user": 4,
+        "article": 32,
+        "content": "토토로 너무 귀여워요!",
+        "created_at": "2024-11-26T02:23:26.665Z",
+        "updated_at": "2024-11-26T02:23:26.665Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 63,
+    "fields": {
+        "user": 1,
+        "article": 45,
+        "content": "진짜 반전이 대박이었어요! 마지막까지 눈을 뗄 수 없었고, 망치 싸움 장면은 영화 역사에 남을 명장면이에요!",
+        "created_at": "2024-11-26T02:56:27.607Z",
+        "updated_at": "2024-11-26T02:56:27.607Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 64,
+    "fields": {
+        "user": 1,
+        "article": 41,
+        "content": "액션의 스펙터클은 물론, 퓨리오사의 내면적 서사를 깊이 탐구한 점이 놀라웠어요. 매드 맥스 세계관의 무게감을 더해주는 작품이었습니다",
+        "created_at": "2024-11-26T02:56:57.867Z",
+        "updated_at": "2024-11-26T02:56:57.867Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 65,
+    "fields": {
+        "user": 1,
+        "article": 40,
+        "content": "노래도 좋고, 춤추는 장면도 너무 예뻤어요! 미아랑 세바스찬 둘 다 사랑스럽고, 마지막엔 눈물 찔끔했어요. OST 계속 듣게 되는 영화예요",
+        "created_at": "2024-11-26T02:57:25.480Z",
+        "updated_at": "2024-11-26T02:57:25.480Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 66,
+    "fields": {
+        "user": 1,
+        "article": 36,
+        "content": "루랑 윌의 케미가 너무 좋았어요! 마지막은 진짜 슬펐지만, 보는 내내 웃고 울면서 감동 많이 받았어요",
+        "created_at": "2024-11-26T02:57:44.028Z",
+        "updated_at": "2024-11-26T02:57:44.028Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 67,
+    "fields": {
+        "user": 2,
+        "article": 45,
+        "content": "결말 보고 며칠 동안 여운에서 못 빠져나왔어요. 최민식 배우 연기가 너무 소름 돋았고, 진짜 강렬한 영화였어요",
+        "created_at": "2024-11-26T02:58:14.366Z",
+        "updated_at": "2024-11-26T02:58:14.366Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 68,
+    "fields": {
+        "user": 2,
+        "article": 37,
+        "content": "시간 여행 장면이 진짜 신선하고 재미있었어요!",
+        "created_at": "2024-11-26T02:59:29.797Z",
+        "updated_at": "2024-11-26T02:59:29.797Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 69,
+    "fields": {
+        "user": 6,
+        "article": 30,
+        "content": "정말 동감해요. '업'은 단순히 어린이용 애니메이션이 아니라, 어른들에게도 큰 감동을 주는 작품이죠. 특히 카를이 엘리와의 추억을 소중히 간직하며 새 여정을 떠나는 모습이 너무 뭉클했어요. 잊지 못할 명작이에요!",
+        "created_at": "2024-11-26T04:53:05.222Z",
+        "updated_at": "2024-11-26T04:53:05.222Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 70,
+    "fields": {
+        "user": 1,
+        "article": 30,
+        "content": "저도 이 영화를 보면서 많은 생각이 들었어요. 할머니와의 추억이 떠오르면서 눈물도 나고, 카를의 여정을 보며 '내 삶도 이렇게 계속 나아가야겠구나' 하는 용기를 얻었어요. 정말 따뜻한 영화예요.",
+        "created_at": "2024-11-26T04:53:48.668Z",
+        "updated_at": "2024-11-26T04:53:48.668Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 71,
+    "fields": {
+        "user": 6,
+        "article": 30,
+        "content": "진짜 어떤 이별도 사랑의 끝은 아니다’라는 메시지가 이 영화의 핵심 같아요ㅠㅠ",
+        "created_at": "2024-11-26T04:55:17.452Z",
+        "updated_at": "2024-11-26T04:55:17.452Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 72,
+    "fields": {
+        "user": 6,
+        "article": 29,
+        "content": "시험이라는 감옥을 탈출하신 걸 축하드려요! 저도 이 영화 보면서 희망의 힘을 믿게 됐어요. 앤디가 끝까지 포기하지 않았던 것처럼 저도 제 꿈을 위해 더 열심히 살아봐야겠다고 다짐하게 되네요.",
+        "created_at": "2024-11-26T04:57:49.472Z",
+        "updated_at": "2024-11-26T04:57:49.472Z"
+    }
+},
+{
+    "model": "community.comment",
+    "pk": 73,
+    "fields": {
+        "user": 5,
+        "article": 29,
+        "content": "이 영화는 볼 때마다 새로운 감동을 주는 것 같아요. 특히 ‘희망은 좋은 것이고, 좋은 것은 결코 사라지지 않는다’는 대사는 제 삶의 좌우명이 됐어요. 글쓴이님 이야기 들으니 다시 보고 싶어지네요.",
+        "created_at": "2024-11-26T04:58:50.283Z",
+        "updated_at": "2024-11-26T04:58:50.283Z"
+    }
+}
+]

@@ -15,6 +15,16 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# 환경변수
+import os
+import environ
+
+env = environ.Env(DEBUG=(bool, True))
+environ.Env.read_env(env_file = os.path.join(BASE_DIR, '.env'))
+API_KEY = env('API_KEY')
+API_TOKEN = env('API_TOKEN')
+GPT_API_KEY = env('GPT_API_KEY')
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -47,7 +57,6 @@ INSTALLED_APPS = [
     'movies',
     'recommendations',
     'community',
-    'watchlist',
     'search',
     'inquiries',
     "corsheaders",
@@ -62,9 +71,9 @@ INSTALLED_APPS = [
 SITE_ID = 1
 
 MIDDLEWARE = [
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     "corsheaders.middleware.CorsMiddleware",
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -148,11 +157,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# MIDDLEWARE = [
-    # "corsheaders.middleware.CorsMiddleware",
-    # "django.middleware.common.CommonMiddleware",
-# ]
 
+# 개발 환경에서는 모든 도메인에서의 접근을 허용
+CORS_ALLOW_ALL_ORIGINS = True
+
+# 또는 특정 도메인만 허용하고 싶다면:
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
@@ -164,6 +173,9 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES' : [
         'rest_framework.authentication.TokenAuthentication',
     ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
 }
 
 # 사용자 수정
@@ -173,3 +185,14 @@ AUTH_USER_MODEL = 'accounts.User'
 REST_AUTH = {
     'REGISTER_SERIALIZER': 'accounts.serializer.CustomRegisterSerializer',
  }
+
+
+# 사진 기반 영화 추천
+import os
+from pathlib import Path
+
+# 프로젝트 루트 디렉토리 경로 설정
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Google Cloud Vision API 인증 파일 경로 설정
+GOOGLE_CLOUD_CREDENTIALS = os.path.join(BASE_DIR, 'credentials', 'google_cloud_key.json')

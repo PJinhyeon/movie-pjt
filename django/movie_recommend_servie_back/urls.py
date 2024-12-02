@@ -23,4 +23,7 @@ urlpatterns = [
     path('dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),
     path('movies/', include('movies.urls')),
     path('accounts/', include('accounts.urls')),
+    path('community/', include('community.urls')),
+    path('search-history/', include('search.urls')),
+    path('recommendations/', include('recommendations.urls')),
 ]
