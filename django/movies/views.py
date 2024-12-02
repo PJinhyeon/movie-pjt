@@ -9,6 +9,7 @@ from community.models import Article  # Articles 앱의 모델
 import json
 
 API_KEY = settings.API_KEY
+API_TOKEN = settings.API_TOKEN
 
 import requests
 from django.http import JsonResponse
@@ -20,7 +21,7 @@ from django.http import JsonResponse
 #     api_url = "https://api.themoviedb.org/3/person/popular"
 #     headers = {
 #         "accept": "application/json",
-#         "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NjI4NjdiYjk5ZTM1ZjBhYjQ2NDVmNGVlNzE4NzI4NyIsIm5iZiI6MTczMjA3ODgzMS44OTQ1MDU1LCJzdWIiOiI2NzM2ZGMxZjAyMTIyM2E4NzRjNjA1NjIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.-WeCrbxLZnfVMbzbthb8e1j0INtgK3ffUicE9VWwkDs"
+#         "Authorization": f"Bearer {API_TOKEN}"
 #     }
 
 #     try:
@@ -46,7 +47,7 @@ from django.http import JsonResponse
 #     api_url = f"https://api.themoviedb.org/3/person/{actor_pk}?language=ko-KR"
 #     headers = {
 #         "accept": "application/json",
-#         "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NjI4NjdiYjk5ZTM1ZjBhYjQ2NDVmNGVlNzE4NzI4NyIsIm5iZiI6MTczMjA3ODgzMS44OTQ1MDU1LCJzdWIiOiI2NzM2ZGMxZjAyMTIyM2E4NzRjNjA1NjIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.-WeCrbxLZnfVMbzbthb8e1j0INtgK3ffUicE9VWwkDs"
+#         "Authorization": f"Bearer {API_TOKEN}"
 #     }
 
 #     try:
@@ -69,7 +70,7 @@ def movie_list(request):
     api_url = "https://api.themoviedb.org/3/movie/popular"
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NjI4NjdiYjk5ZTM1ZjBhYjQ2NDVmNGVlNzE4NzI4NyIsIm5iZiI6MTczMjA3ODgzMS44OTQ1MDU1LCJzdWIiOiI2NzM2ZGMxZjAyMTIyM2E4NzRjNjA1NjIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.-WeCrbxLZnfVMbzbthb8e1j0INtgK3ffUicE9VWwkDs"
+        "Authorization": f"Bearer {API_TOKEN}"
     }
 
     try:
@@ -97,7 +98,7 @@ def movie_detail(request, movie_pk):
     api_url = f"https://api.themoviedb.org/3/movie/{movie_pk}?language=ko-KR"
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NjI4NjdiYjk5ZTM1ZjBhYjQ2NDVmNGVlNzE4NzI4NyIsIm5iZiI6MTczMjA3ODgzMS44OTQ1MDU1LCJzdWIiOiI2NzM2ZGMxZjAyMTIyM2E4NzRjNjA1NjIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.-WeCrbxLZnfVMbzbthb8e1j0INtgK3ffUicE9VWwkDs"
+        "Authorization": f"Bearer {API_TOKEN}"
     }
 
     try:
@@ -119,7 +120,7 @@ def movie_credits(request, movie_pk):
     api_url = f"https://api.themoviedb.org/3/movie/{movie_pk}/credits?language=ko-KR"
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NjI4NjdiYjk5ZTM1ZjBhYjQ2NDVmNGVlNzE4NzI4NyIsIm5iZiI6MTczMjQ0MTEwNi4wMTEzMTIyLCJzdWIiOiI2NzM2ZGMxZjAyMTIyM2E4NzRjNjA1NjIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.vlXSC1WPnzHGLmg-lma9PuhxAaBliXNwLHyxhEGvg94"
+        "Authorization": f"Bearer {API_TOKEN}"
     }
 
     try:
@@ -142,7 +143,7 @@ def movies_by_genre(request, genre_id):
     api_url = "https://api.themoviedb.org/3/discover/movie"
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NjI4NjdiYjk5ZTM1ZjBhYjQ2NDVmNGVlNzE4NzI4NyIsIm5iZiI6MTczMjA3ODgzMS44OTQ1MDU1LCJzdWIiOiI2NzM2ZGMxZjAyMTIyM2E4NzRjNjA1NjIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.-WeCrbxLZnfVMbzbthb8e1j0INtgK3ffUicE9VWwkDs"
+        "Authorization": f"Bearer {API_TOKEN}"
     }
     total_movies = []
 
@@ -171,7 +172,7 @@ def genre_list(request):
     api_url = "https://api.themoviedb.org/3/genre/movie/list?language=ko"
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NjI4NjdiYjk5ZTM1ZjBhYjQ2NDVmNGVlNzE4NzI4NyIsIm5iZiI6MTczMjA3ODgzMS44OTQ1MDU1LCJzdWIiOiI2NzM2ZGMxZjAyMTIyM2E4NzRjNjA1NjIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.-WeCrbxLZnfVMbzbthb8e1j0INtgK3ffUicE9VWwkDs"
+        "Authorization": f"Bearer {API_TOKEN}"
     }
 
     try:
