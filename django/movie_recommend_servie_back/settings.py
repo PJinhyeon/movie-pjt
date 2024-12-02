@@ -29,8 +29,6 @@ GPT_API_KEY = env('GPT_API_KEY')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-b+^8fk1ruvh5^mu*--jwz$$5j(3^6$x+9!ouyk%yjufd26aq7s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
