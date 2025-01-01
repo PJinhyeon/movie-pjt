@@ -367,3 +367,9 @@ MyPageView.vue
   git pull origin main
   git merge youtube
   git add . (메인 저장) -> git commit -> git push
+
+
+### git branch로 변경하는 법
+1. git fetch origin
+2. git branch -r
+3. git checkout 브랜치명
